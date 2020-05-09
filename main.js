@@ -5,6 +5,7 @@ let pets = [
 ];
 
 const petsWithAge = pets.map(obj=> ({ ...obj, age: new Date().getFullYear() - obj.bornOn }))
+//you should use forEach it's more simple 
 console.log(petsWithAge);
 
 const dogs = petsWithAge.filter(item => item.type == "dog")
